@@ -16,7 +16,7 @@ function App() {
     <>
       <Navbar/>
         <Hero/>
-      <i className="bi bi-apple"></i>
+      {/* <i className="bi bi-apple"></i> */}
       <Contacto/>
       <AgendaSemanal/>
       <Noticias/>

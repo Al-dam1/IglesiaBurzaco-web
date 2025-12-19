@@ -3,8 +3,11 @@ import React from 'react'
 const Hero = () => {
   return (
     <div>
-     <h2>hola</h2>
-     <img src='blob:https://web.telegram.org/eabd3813-75b0-4c4e-b83a-00935ff39d97' />
+     <h2>Iglesia Universal Burzaco</h2>
+     <video width={320} height={240} controls="controls" poster='/img/flyer_viernes.jpg' >
+      <source src='/img/viernes.mp4'></source>
+      EL NAVEGADOR NO SOPORTA LA ETIQUETA VIDEO
+     </video>
     </div>
   )
 }

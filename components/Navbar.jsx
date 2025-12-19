@@ -39,40 +39,32 @@ const navbarRedes =[
 
 const Navbar = () => {
   return (
-    <div>
-      <nav>
-        <div>
-          <div>
-            <img src="https://universal.org.ar/wp-content/uploads/2024/06/logo-universal-Blanco-e1709130478530-copia-1.png" />
-            <div>
-            <ul>
-              {navbarlinks.map((link)=>(
-                <li key={link.id}>
-                  <a href={link.link}>{link.title}</a>
-                </li>
-              ))}
-            </ul>
-            {/* redes */}
-          </div>
-          <div>
-            <ul>
-              {navbarRedes.map((link)=>(
-                 <li key={link.id}>
-                  <a href={link.link}>
-                    <i className={`${link.icono}`}>
+    <>
+    <nav className="navbar">
+  <div className="logo">
+    <img src="img/logo.jpg" alt="Logo" />
+  </div>
 
-                    </i>
-                  </a>
-                 </li>
-              ))}
-             
-            </ul>
-          </div>
-          </div>
-          
-        </div>
-      </nav>
-    </div>
+  <ul className="nav-links">
+    {navbarlinks.map((link) => (
+      <li key={link.id}>
+        <a href={link.link}>{link.title}</a>
+      </li>
+    ))}
+  </ul>
+
+  {/* <ul className="nav-redes">
+    {navbarRedes.map((link) => (
+      <li key={link.id}>
+        <a href={link.link}>
+          <i className={link.icono}></i>
+        </a>
+      </li>
+    ))}
+  </ul> */}
+</nav>
+
+    </>
   );
 };
 
