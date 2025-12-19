@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sofia&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+  /* Colores base */
+  --color-background: #ffffff;       /* fondo principal blanco */
+  --color-surface: #f5f5f5;          /* gris muy claro para bloques */
+  --color-primary: #0a2a4a;          /* azul oscuro usado en encabezados */
+  --color-secondary: #e30613;        /* rojo para acentos y botones */
+  --color-text: #222222;             /* texto principal negro/gris oscuro */
+  --color-text-light: #666666;       /* texto secundario/gris */
+  --color-border: #dddddd;           /* bordes suaves */
+
+  /* Tipografía */
+  --font-family-base: "Roboto", Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 2rem;
+  --font-size-subheading: 1.25rem;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Espaciado */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+
+  /* Botones */
+  --btn-bg: var(--color-primary);
+  --btn-bg-hover: #08305c;           /* azul más intenso */
+  --btn-text: #ffffff;
+  --btn-radius: 4px;
+
+  /* Hero / destacados */
+  --hero-bg: url('hero-image.jpg');  /* imagen de fondo */
+  --hero-overlay: rgba(0,0,0,0.5);   /* capa oscura sobre imagen */
+  --hero-text-color: #ffffff;
+}
+body{
+    background-color: var(--color-background);
+}
+nav{
+  background-color: var(--color-primary);
+  font-size: var(--font-size-heading);
+  display: flex;
+  justify-content: flex-end;
+  
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+li{
+  display: inline;
+  margin-top: 20px;
+}
+a{
+  text-decoration: none;
+  color: var(--btn-text);
+  background-color: var(--color-primary);
+  padding: 8px 15px;
+  border-radius: var(--btn-radius);
+}
+a:hover{
+  color: var(--color-secondary);
+  background-color: var(--btn-bg-hover);
+}
+/* AGENDA SEMANAL */
+.container{
+  display: flex;
+}
+.container_h2{
+  display: flex;
+  justify-content: flex-start;
+  color: var(--color-text);
+}
+.list-group{
+  display: flex;
+  background-color: var(--color-primary);
+  border-radius: var(--btn-radius);
+  color: var(--color-surface);
+}
+.list-group-item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
