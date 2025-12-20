@@ -82,23 +82,39 @@ body{
 /* AGENDA SEMANAL */
 .container{
   display: flex;
+  margin: 10px;
 }
 .container_h2{
   display: flex;
+  font-size: 2.5rem;
   justify-content: flex-start;
   color: var(--color-text);
+  width: 100%;
+  gap: 5px;
+}
+.container_h2 b{
+  color: var(--color-primary);
+  font-size: 2.5rem;
 }
 .list-group{
   display: flex;
-  background-color: var(--color-primary);
   border-radius: var(--btn-radius);
-  color: var(--color-surface);
+  color: var(--color-primary);
+  gap: 10px;
+}
+.list-group-item strong{
+  margin: 10px;
+  font-size: 20px;
 }
 .list-group-item{
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin: 5px;
+ 
+}
+.list-group-item img{
+ border-radius: 100%;
 }
 
 
@@ -106,10 +122,21 @@ body{
 
 
 
+ 
+/*---------FOOTER---------- */
 
-
-.footer{
-  color: var(--color-text);
+.redes{
+  display: flex;
   background-color: gray;
-  font-size: var(--font-weight-bold);
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--color-text);
+  margin: 10px;
+}
+.nav-redes{
+  display: flex;
+  flex-direction: center;
+  justify-content:center;
+  align-items: center;
+  margin: 10px;
 }

@@ -10,7 +10,7 @@ const Contacto = () => {
           position: "fixed",
           bottom: "20px",
           right: "20px",
-          zIndex: 1000
+          zIndex: 1000,
         }}
         target="_blank"
         rel="noopener noreferrer"
