@@ -43,8 +43,15 @@
 }
 body{
     background-color: var(--color-background);
-    width: 100%;
+    /* background-image: url("https://s3.us-east-1.amazonaws.com/appuniversal/26091ch"); */
+    /* width: 100%; */
+    background-size: cover;
+    position: relative;
+    background-position: center;
+     margin: 0;
+      min-height: 100vh;
 }
+
 .navbar{
   background-color: var(--color-primary);
   font-size: var(--font-size-heading);
@@ -79,6 +86,48 @@ body{
   color: var(--color-secondary);
   background-color: var(--btn-bg-hover);
 }
+/* --------CONTACTO--------- */
+.btn-whatsapp {
+ position: relative;
+ display: flex;
+ justify-content: flex-end;
+}
+.btn-whatsapp i{
+  align-items: center;
+  margin-right: 45px;
+ font-size: 2.2rem;
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+  content: "";
+  position: absolute;
+  top: 50%;                  /* centro vertical */
+  left: 95%;                 /* centro horizontal */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #00e676;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1); /* arranca centrado */
+  animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before { animation-delay: 1s; }
+.btn-whatsapp:after { animation-delay: 1.3s; }
+
+.btn-whatsapp i {
+  position: relative;
+  z-index: 2; /* ícono encima de las ondas */
+}
+
+@keyframes onda {
+  0%   { transform: translate(-50%, -50%) scale(1); }
+  15%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(2.5); }
+}
+
+
 /* AGENDA SEMANAL */
 .container{
   display: flex;

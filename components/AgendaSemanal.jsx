@@ -3,9 +3,9 @@ import React from "react";
 const AgendaSemanal = () => {
   const agenda = [
     { dia: "Domingo", actividad: "Encuentro con Dios", imagen:"/img/semana_lunes.jpg" },
-    { dia: "Lunes", actividad: "Prosperidad con Dios", imagen:"/img/semana_domingo.jpg" },
-    { dia: "Martes", actividad: "Sanidad", imagen:"/img/semana_martes.jpg" },
-    { dia: "Miércoles", actividad: "Estudio bíblico", imagen:"/img/semana_miercoles.jpg" },
+    { dia: "Lunes", actividad: "Prosperidad con Dios", imagen:"/img/semana_lunes1.jpg" },
+    { dia: "Martes", actividad: "Sanidad", imagen:"/img/semana_martes2.jpg" },
+    { dia: "Miércoles", actividad: "Estudio bíblico", imagen:"/img/semana_miercoles3.jpg" },
     { dia: "Jueves", actividad: "Terapia del Amor", imagen:"/img/semana_jueves.jpg" },
     { dia: "Viernes", actividad: "Liberación",imagen:"/img/semana_viernes.jpg" },
     {
