@@ -8,6 +8,7 @@ import Hero from '../hero/Hero'
 import AgendaSemanal from '../components/AgendaSemanal'
 import Noticias from '../components/Noticias'
 import Contacto from '../components/Contacto'
+import Fju from '../components/Fju'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Contacto/>
       <AgendaSemanal/>
       <Noticias/>
+      <Fju/>
       <Footer/>
     </>
   )
