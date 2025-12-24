@@ -19,6 +19,7 @@ const AgendaSemanal = () => {
     <>
       <h2 className="container_h2">Agenda <b>Semanal</b></h2>
       <div className="container">
+        <button class="prev">&#10094;</button>
         <ul className="list-group">
           {agenda.map((item, index) => (
             <li key={index} className="list-group-item">
@@ -27,6 +28,7 @@ const AgendaSemanal = () => {
             </li>
           ))}
         </ul>
+        <button class="next">&#10095;</button>
       </div>
     </>
   );

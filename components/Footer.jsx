@@ -21,7 +21,13 @@ const Footer = () => {
     <>
     
     <div className="redes">
-       <p><small>derechos reservados &copy;</small></p>
+       
+       <h3>Medios de Comunicacion</h3>
+      <ul className="nav-redes" >
+        <li> <a href='https://www.unifetv.com/'>unifetv</a>
+        <a href='https://redaleluya.com.ar/'>RedAaleluya</a>
+        </li>
+      </ul>
        <h3>Seguinos en nuestras redes</h3>
        <ul className="nav-redes">
     {navbarRedes.map((link) => (
@@ -32,7 +38,9 @@ const Footer = () => {
       </li>
     ))}
   </ul> 
+  <p><small>derechos reservados &copy;</small></p>
     </div>
+    
     </>
   )
 }

@@ -13,7 +13,7 @@ const navbarlinks =[
   },
   {
     id:3,
-    title:"Soporte",
+    title:"Contacto",
     link:"#"
   },
   {
@@ -53,15 +53,7 @@ const Navbar = () => {
     ))}
   </ul>
 
-  {/* <ul className="nav-redes">
-    {navbarRedes.map((link) => (
-      <li key={link.id}>
-        <a href={link.link}>
-          <i className={link.icono}></i>
-        </a>
-      </li>
-    ))}
-  </ul> */}
+  
 </nav>
 
     </>
