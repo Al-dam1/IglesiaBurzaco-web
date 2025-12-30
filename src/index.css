@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sofia&display=swap');
-@import 'bootstrap-icons/font/bootstrap-icons.css';
-*{
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sofia&display=swap");
+@import "bootstrap-icons/font/bootstrap-icons.css";
+* {
   margin: 0;
   padding: 0;
   /* overflow-x: hidden; 
@@ -8,13 +8,13 @@
 }
 :root {
   /* Colores base */
-  --color-background: #ffffff;       /* fondo principal blanco */
-  --color-surface: #f5f5f5;          /* gris muy claro para bloques */
-  --color-primary: #0a2a4a;          /* azul oscuro usado en encabezados */
-  --color-secondary: #e30613;        /* rojo para acentos y botones */
-  --color-text: #222222;             /* texto principal negro/gris oscuro */
-  --color-text-light: #666666;       /* texto secundario/gris */
-  --color-border: #dddddd;           /* bordes suaves */
+  --color-background: #ffffff; /* fondo principal blanco */
+  --color-surface: #f5f5f5; /* gris muy claro para bloques */
+  --color-primary: #0a2a4a; /* azul oscuro usado en encabezados */
+  --color-secondary: #e30613; /* rojo para acentos y botones */
+  --color-text: #222222; /* texto principal negro/gris oscuro */
+  --color-text-light: #666666; /* texto secundario/gris */
+  --color-border: #dddddd; /* bordes suaves */
 
   /* Tipografía */
   --font-family-base: "Roboto", Arial, sans-serif;
@@ -32,27 +32,28 @@
 
   /* Botones */
   --btn-bg: var(--color-primary);
-  --btn-bg-hover: #08305c;           /* azul más intenso */
+  --btn-bg-hover: #08305c; /* azul más intenso */
   --btn-text: #ffffff;
   --btn-radius: 4px;
 
   /* Hero / destacados */
-  --hero-bg: url('hero-image.jpg');  /* imagen de fondo */
-  --hero-overlay: rgba(0,0,0,0.5);   /* capa oscura sobre imagen */
+  --hero-bg: url("hero-image.jpg"); /* imagen de fondo */
+  --hero-overlay: rgba(0, 0, 0, 0.5); /* capa oscura sobre imagen */
   --hero-text-color: #ffffff;
 }
-body{
-    background-color: var(--color-background);
-    /* background-image: url("https://s3.us-east-1.amazonaws.com/appuniversal/26091ch"); */
-    /* width: 100%; */
-    background-size: cover;
-    position: relative;
-    background-position: center;
-     margin: 0;
-      min-height: 100vh;
+
+body {
+  background-color: var(--color-background);
+  /* background-image: url("https://s3.us-east-1.amazonaws.com/appuniversal/26091ch"); */
+  /* width: 100%; */
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  margin: 0;
+  min-height: 100vh;
 }
 
-.navbar{
+.navbar {
   background-color: var(--color-primary);
   font-size: var(--font-size-heading);
   display: flex;
@@ -62,12 +63,12 @@ body{
   width: 100%;
   gap: 10px;
 }
-.logo{
+.logo {
   max-height: 50px;
   margin-bottom: 30px;
 }
 .nav-links,
-.nav-redes{
+.nav-redes {
   list-style: none;
   display: flex;
   gap: 15px;
@@ -75,44 +76,44 @@ body{
   padding: 0;
 }
 .nav-links a,
-.nav-redes a{
+.nav-redes a {
   text-decoration: none;
   padding: 8px 15px;
   border-radius: var(--btn-radius);
   color: var(--btn-text);
 }
 .nav-links a:hover,
-.nav-redes a:hover{
+.nav-redes a:hover {
   color: var(--color-secondary);
   background-color: var(--btn-bg-hover);
 }
 /* --------CONTACTO--------- */
 .btn-whatsapp {
- position: fixed;
- bottom: 20px;
- right: 25px;
- width: 60px;
- height: 60px;
- border-radius: 50%;
- background-color: #25D366;
- align-items: center;
- z-index: 1000;
- display: flex;
- justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
 }
-.btn-whatsapp i{
- position: relative;
- z-index: 2;
- font-size: 2.2rem;
- color: white;
+.btn-whatsapp i {
+  position: relative;
+  z-index: 2;
+  font-size: 2.2rem;
+  color: white;
 }
 
 .btn-whatsapp:before,
 .btn-whatsapp:after {
   content: "";
   position: absolute;
-  top: 50%;                  /* eje y */
-  left: 50%;                 /* eje x */
+  top: 50%; /* eje y */
+  left: 50%; /* eje x */
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -122,8 +123,12 @@ body{
   animation: onda 1.7s infinite;
 }
 
-.btn-whatsapp:before { animation-delay: 1s; }
-.btn-whatsapp:after { animation-delay: 1.3s; }
+.btn-whatsapp:before {
+  animation-delay: 1s;
+}
+.btn-whatsapp:after {
+  animation-delay: 1.3s;
+}
 
 .btn-whatsapp i {
   position: relative;
@@ -131,39 +136,49 @@ body{
 }
 
 @keyframes onda {
-  0%   { transform: translate(-50%, -50%) scale(1); }
-  15%  { opacity: 1; }
-  100% { opacity: 0; transform: translate(-50%, -50%) scale(2.5); }
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
 }
 
-
 /* AGENDA SEMANAL */
-.container{
+.container {
   display: flex;
   margin: auto;
   width: auto;
   position: relative;
   overflow: hidden;
 }
-.container button { 
+.container button {
   position: absolute;
-   top: 50%;
-    transform: translateY(-50%);
-     background: transparent;
-     display: flex;
-     justify-items: center;
-      color: white;
-       border: none;
-        font-size: 2rem;
-         cursor: pointer;
-          padding: 5px 10px; 
-        } 
-.container button:hover{
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  display: flex;
+  justify-items: center;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.container button:hover {
   color: var(--color-secondary);
 }
-.prev { left: 0; }
- .next { right: 0; }
-.container_h2{
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.container_h2 {
   display: flex;
   font-size: 2.5rem;
   justify-content: flex-start;
@@ -171,53 +186,49 @@ body{
   width: 100%;
   gap: 5px;
 }
-.container_h2 b{
+.container_h2 b {
   color: var(--color-primary);
   font-size: 2.5rem;
 }
-.list-group{
+.list-group {
   display: flex;
   border-radius: var(--btn-radius);
   color: var(--color-primary);
   gap: 10px;
 }
-.list-group-item strong{
+.list-group-item strong {
   margin: 10px;
   font-size: 20px;
 }
-.list-group-item{
+.list-group-item {
   width: 50%;
   display: flex;
   flex-direction: column;
   margin: 5px;
- 
 }
-.list-group-item img{
- border-radius: 100%;
+.list-group-item img {
+  border-radius: 100%;
 }
-
-
-
 
 /* ---------NOTICIAS -------- */
-.tarjetas{
+.tarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.cards{
-  border: 2px solid underline ;
+.cards {
+  border: 2px solid underline;
   width: 250px;
 }
-.cards img{
+.cards img {
   width: 200px;
   border-radius: 5px;
 }
 /*---------FOOTER---------- */
 
-.redes{
+.redes {
   display: flex;
   background-color: gray;
   flex-direction: column;
@@ -225,10 +236,75 @@ body{
   color: var(--color-text);
   margin: 10px;
 }
-.nav-redes{
+.nav-redes {
   display: flex;
   flex-direction: center;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+
+
+/* MEDIAS QUERIS */
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+    background-color: #000000; 
+    font-size: 1.2rem;
+    justify-content:flex-start;
+    gap: 5px;
+    width: 95%;
+  }
+  .nav-links{
+    
+  }
+  .nav-links,
+  .nav-redes {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .list-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .list-group-item {
+    flex: 1 1 200px;
+    max-width: 250px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+  .list-group-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* opcional: redondear */
+    object-fit: cover; /* ajusta la imagen dentro del tamaño */
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    width: 100%;
+    max-width: 300px;
+  }
+  .cards img {
+    width: 100%;
+  }
+  .tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
