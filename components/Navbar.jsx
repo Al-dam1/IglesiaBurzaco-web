@@ -40,24 +40,50 @@ const navbarRedes =[
 const Navbar = () => {
   return (
     <>
-    <nav className="navbar">
-  <div className="logo">
-    <img src="img/logo.jpg" alt="Logo" />
-  </div>
+      <nav className="navbar">
+        <div className="logo">
+          <img src="img/logo.jpg" alt="Logo" />
+        </div>
 
-  <ul className="nav-links">
-    {navbarlinks.map((link) => (
-      <li key={link.id}>
-        <a href={link.link}>{link.title}</a>
-      </li>
-    ))}
-  </ul>
+        <ul className="nav-links">
+          {navbarlinks.map((link) => (
+            <li key={link.id}>
+              <a href={link.link}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
 
-  
-</nav>
+        {/* Botón hamburguesa */}
+        <input type="checkbox" id="myInput" />
+        <label htmlFor="myInput" className="hamburger">
+          <span className="bar top"></span>
+          <span className="bar middle"></span>
+          <span className="bar bottom"></span>
+        </label>
 
+        {/* Aside menu */}
+        <aside>
+          <div className="aside-section aside-left">
+            <div className="aside-content">
+              <p>Some text that will make you click the CTA</p>
+              <button className="button">CTA</button>
+            </div>
+          </div>
+          <div className="aside-section aside-right">
+            <ul className="aside-list">
+              <li><a href="/" className="aside-anchor">Inicio</a></li>
+              <li><a href="/" className="aside-anchor">Nosotros</a></li>
+              <li><a href="/" className="aside-anchor">Contacto</a></li>
+              <li><a href="/" className="aside-anchor">Testimonios</a></li>
+            </ul>
+          </div>
+        </aside>
+      </nav>
     </>
   );
 };
+
+
+
 
 export default Navbar;
