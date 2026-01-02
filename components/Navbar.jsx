@@ -1,49 +1,79 @@
-import React from "react";
-
-const navbarlinks =[
+import React, { useState } from "react";
+import NavbarHambuerguesa from "/components/NavbarHambuerguesa";
+const navbarlinks = [
   {
-    id:1,
-    title:"Inicio",
-    link:"/"
+    id: 1,
+    title: "Inicio",
+    link: "/",
   },
   {
-    id:2,
-    title:"Nosotros",
-    link:"#"
+    id: 2,
+    title: "Nosotros",
+    link: "#",
   },
   {
-    id:3,
-    title:"Contacto",
-    link:"#"
+    id: 3,
+    title: "Contacto",
+    link: "#",
   },
   {
-    id:4,
-    title:"testimonios",
-    link:"#"
+    id: 4,
+    title: "testimonios",
+    link: "#",
   },
-]
-const navbarRedes =[
+];
+const navbarRedes = [
   {
-    id:1,
-    title:"intagram",
-    link:"https://www.instagram.com/vidamuchomejor?igsh=MTk3bTlsMDZ4bW1ubw==",
-    icono:"bi bi-instagram"
+    id: 1,
+    title: "intagram",
+    link: "https://www.instagram.com/vidamuchomejor?igsh=MTk3bTlsMDZ4bW1ubw==",
+    icono: "bi bi-instagram",
   },
   {
-    id:2,
-    title:"facebook",
-    link:"https://www.facebook.com/profile.php?id=61581802213362",
-    icono:"bi bi-facebook"
-  }
-]
+    id: 2,
+    title: "facebook",
+    link: "https://www.facebook.com/profile.php?id=61581802213362",
+    icono: "bi bi-facebook",
+  },
+];
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () =>{ setIsOpen(!isOpen)};
   return (
     <>
       <nav className="navbar">
         <div className="logo">
           <img src="img/logo.jpg" alt="Logo" />
         </div>
+        {/* menu hambuerguesa */}
+      <button onClick={toggleMenu} className="block md:hidden text-red-600 bg-transparent border-none" >
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="w-6 h-6">
+            {isOpen ? (
+              <>
+                <path d="M18 6L6 18" />
+                <path d="M6 6L18 18" />
+              </>
+            ) : (
+              <>
+                <path d="M4 6L20 6" />
+                <path d="M4 12L20 12" />
+                <path d="M4 18L20 18" />
+              </>
+            )}
+          </svg>
+        </button>
 
         <ul className="nav-links">
           {navbarlinks.map((link) => (
@@ -52,38 +82,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        {/* Botón hamburguesa */}
-        <input type="checkbox" id="myInput" />
-        <label htmlFor="myInput" className="hamburger">
-          <span className="bar top"></span>
-          <span className="bar middle"></span>
-          <span className="bar bottom"></span>
-        </label>
-
-        {/* Aside menu */}
-        <aside>
-          <div className="aside-section aside-left">
-            <div className="aside-content">
-              <p>Some text that will make you click the CTA</p>
-              <button className="button">CTA</button>
-            </div>
-          </div>
-          <div className="aside-section aside-right">
-            <ul className="aside-list">
-              <li><a href="/" className="aside-anchor">Inicio</a></li>
-              <li><a href="/" className="aside-anchor">Nosotros</a></li>
-              <li><a href="/" className="aside-anchor">Contacto</a></li>
-              <li><a href="/" className="aside-anchor">Testimonios</a></li>
-            </ul>
-          </div>
-        </aside>
       </nav>
     </>
   );
 };
-
-
-
 
 export default Navbar;
