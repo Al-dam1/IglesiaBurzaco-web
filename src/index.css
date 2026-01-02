@@ -81,7 +81,7 @@ body {
   left: 1rem; /* lo manda a la izquierda */
   background: transparent;
   border: none;
-  color: #fff; /* rojo */
+  color: #white; /* rojo */
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -307,7 +307,7 @@ body {
   .navbar { display: flex;
      justify-content: space-between;
       align-items: center;
-      background-color: rgb(201, 25, 25);
+      background-color: black;
       font-size:1.2rem;
        padding: 0 1rem;
        }
